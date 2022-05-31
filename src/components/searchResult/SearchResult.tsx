@@ -29,6 +29,7 @@ const SearchResult: FC<Props> = ({ product }) => {
 
         <div className={styles.packageInfo}>
           <h3>Nome: {product.name}</h3>
+          <p>Cliente: {product.clientName}</p>
           <p>Tipo de Entrega: {product.deliveryType}</p>
           <p>Status: {product.status}</p>
           <p>Código de Rastreio: {product.trackingCode}</p>
