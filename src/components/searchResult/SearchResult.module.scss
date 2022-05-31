@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.searchResult {
+  @include shadow-sm;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  @include responsive(md) {
+    width: auto;
+  }
+
+  .searchResultContainer {
+    display: flex;
+    align-items: center;
+
+    @include responsive(md) {
+      flex-direction: column;
+    }
+
+    .packageImage {
+      width: 100%;
+      max-width: 350px;
+      height: 352px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      overflow: hidden;
+
+      @include responsive(md) {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 5px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .packageInfo {
+      padding: 2rem;
+
+      h3 {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+  
+      p {
+        color: #333333;
+        font-weight: 400;
+      }
+    }
+  }
+}

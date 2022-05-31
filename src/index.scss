@@ -1,0 +1,12 @@
+@import "./styles/variables";
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button, input {
+  font-family: 'Mitr', sans-serif;
+}
+

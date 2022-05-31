@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Celular",
+    "deliveryType": "Express",
+    "trackingCode": 2357,
+    "status": "Rota de entrega",
+    "imageSrc": "./images/cellphone.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Notebook",
+    "deliveryType": "Comum",
+    "trackingCode": 7965,
+    "status": "Em separação no estoque",
+    "imageSrc": "./images/laptop.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Piano - Teclado",
+    "deliveryType": "Express",
+    "trackingCode": 7085,
+    "status": "Entregue",
+    "imageSrc": "./images/piano-keyboard.jpg"
+  }
+]

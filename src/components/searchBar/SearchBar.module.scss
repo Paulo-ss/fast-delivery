@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.searchBarForm {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+
+  .searchBarContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .searchBar {
+      position: absolute;
+      font-weight: 400;
+      width: 100%;
+      padding: 1rem 0.8rem;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      outline: none;
+      @include shadow-sm;
+      transition: all 0.3s ease-in;
+  
+      &:focus, &:hover {
+        border: 2px solid #333333;
+      }
+    }
+
+    span {
+      position: absolute;
+      right: 15px;
+      z-index: 10;
+    }
+  }
+}
