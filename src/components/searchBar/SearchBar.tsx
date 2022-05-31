@@ -21,7 +21,10 @@ const SearchBar = () => {
       return;
     }
 
-    if (isCodeValid && !data && !error) {
+    if (
+      (isCodeValid && !data && !error) ||
+      (isCodeValid && data?.trackingCode !== Number(trackingCode))
+    ) {
       const fetchData = async () => {
         await getProduct(Number(trackingCode));
       };
